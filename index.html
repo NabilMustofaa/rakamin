@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Fungsi Js</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias voluptate facere suscipit optio pariatur porro enim repellendus fuga dolorem ipsam iusto commodi, adipisci magni laborum earum perferendis veritatis quam nisi.</p>
+
+  <p id="demo">10</p>
+
+  <script>
+    function myFunction(p1, p2) {
+      return p1*p2
+    }
+    setTimeout(function() {
+      document.getElementById("demo").innerHTML += ' + '
+    }, 2000)
+    setTimeout(function() {
+      document.getElementById("demo").innerHTML += ' 2 '
+    }, 4000)
+    setTimeout(function() {
+      document.getElementById("demo").innerHTML += ' = '
+    }, 6000)
+    setTimeout(function() {
+      document.getElementById("demo").innerHTML += ' 10 '
+    }, 8000)
+  </script>
+</body>
+</html>
