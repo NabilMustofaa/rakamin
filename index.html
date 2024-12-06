@@ -13,20 +13,16 @@
 
   <script>
     function myFunction(p1, p2) {
-      return p1*p2
+      return p1*p2;
     }
-    setTimeout(function() {
-      document.getElementById("demo").innerHTML += ' + '
-    }, 2000)
-    setTimeout(function() {
-      document.getElementById("demo").innerHTML += ' 2 '
-    }, 4000)
-    setTimeout(function() {
-      document.getElementById("demo").innerHTML += ' = '
-    }, 6000)
-    setTimeout(function() {
-      document.getElementById("demo").innerHTML += ' 10 '
-    }, 8000)
+    const elements = [' + ', ' 2 ', ' = ', ' 20 '];
+    let time = 2000;
+    elements.forEach(element => {
+      setTimeout(() => {
+        document.getElementById("demo").innerHTML += element;
+      }, time);
+      time += 2000;
+    });
   </script>
 </body>
 </html>
